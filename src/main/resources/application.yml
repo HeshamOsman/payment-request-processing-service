@@ -1,0 +1,10 @@
+server:
+  port: 8181
+spring:
+  cloud.stream.bindings:
+    processPaymentRequest-in-0.destination: payment-requests-topic
+    processPaymentRequest-out-0.destination: processed-payment-requests-topic
+Tikkie:
+  appToken: 331de5bd-bf2c-426d-8f71-227b353f8b32
+  apiKey: iOZlyCT2UK8QZGtXPgRIG4I4AeCwtz0P
+  baseUrl: https://api-sandbox.abnamro.com/v2/tikkie
